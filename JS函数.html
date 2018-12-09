@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS函数</title>
+	<script type="text/javascript">
+		function myFunction()
+		{
+			alert("Hello World");
+		} //函数可在JS中任何位置进行调用。函数名区分大小写。
+	</script>
+</head>
+<body>
+	<button onclick='myFunction()'>Click Me!</button>
+
+<p>点击这个按钮，来调用带参数的函数。</p>
+<button onclick="myFunction1('Bill Gates','CEO')">Click Me!</button>
+<script type="text/javascript">
+	function myFunction1(name,job)
+	{
+		alert("Welcome "+name+", the "+job);
+	}
+</script>
+
+<p>点击不同按钮来调用带参数的函数。</p>
+<button onclick="myFunction1('Harry Potter', 'Wizard')">Harry</button>
+<button onclick="myFunction1('Irena', 'Recruiter')">Irena</button>
+
+<p>本例调用的函数会执行一个运算，然后返回结果：</p>
+<p id="demo"></p>
+<script type="text/javascript">
+	function myFunction2(a,b)
+	{
+		return a*b;
+	}
+	document.getElementById("demo").innerHTML=myFunction2(4,5);
+	document.write(myFunction2(4,6));_
+</script>
+
+<script>
+	function myFunction3(a,b)
+	{   var x=a+b;
+		if (a>b)
+		{
+			return;
+		}
+		x;
+	}
+	document.write(myFunction3(3,2)); //??输出undefined??
+</script>
+
+</body>
+</html>
