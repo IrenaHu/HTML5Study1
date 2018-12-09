@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>
+Java Script能够直接写入HTML输出流中
+</p>
+
+<script>
+document.write("<h1>This is a Heading</h1>");
+document.write("<p>This is a Paragraph.</p>")
+</script>
+
+<button type="button" onclick="alert('Welcome!')">Click Here</button>
+
+<p id="demo">
+	JavaScript可以改变html元素的内容。
+</p>
+
+<script>
+function myFunction()
+{
+x=document.getElementById("demo");  // 找到元素,*注意大小写
+x.innerHTML="Hello JavaScript!";    // 改变内容
+}
+</script>
+
+<button type="button" onclick="myFunction()">点击这里</button>
+
+<p id="colordemo">
+	JS可以改变HTML字体颜色
+</p>
+
+<script>
+function myFunction1()
+{
+x=document.getElementById("colordemo") // 找到元素
+x.style.color="#ff0000";          // 改变样式
+}
+</script>
+
+<button type="button" onclick="myFunction1()">变色</button>
+
+</body>
+</html>
