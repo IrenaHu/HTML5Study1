@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS数据类型</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var name1="Bill Ready"; //JS变量均为对象，声明一个变量=创建一个新的对象
+		var name2='Bill Ready';
+		var answer1="Nice to meet you!";
+		var answer2="I am 'Bill'."
+		var answer3='I am "Bill".'
+
+		document.write(name1+"<br>");//注意括号里的形式
+		document.write(name2+"<br>");
+		document.write(answer3+"<br>");
+		document.write(answer2+"<br>");
+		document.write(answer1+"<br>");
+	</script>
+	<script>
+		var x1=36.00;
+		var x2=36;
+		var y=123e5;
+		var z=123e-5;
+
+		document.write(x1+"<br>");
+		document.write(x2+"<br>");
+		document.write(y+"<br>");
+		document.write(z+"<br>");
+	</script>
+	<script type="text/javascript">
+		var i;
+		var cars=new Array();
+		cars[0]="Audi";
+		cars[1]="BMW";
+		cars[2]="Benz";
+
+		for (i=0;i<cars.length;i++)
+		{
+			document.write(cars[i]+"<br>");
+		}
+	</script>
+
+	<script type="text/javascript">
+		var person={firstname:"Irena",lastname:"Hu",birthday:0112};
+		document.write(person.firstname+"<br>");
+		document.write(person["firstname"]+"<br>");
+	</script>
+
+	<script type="text/javascript">
+		var person1;
+		var car1="Porsche";
+		document.write(person1+"<br/>");
+		document.write(car1+"<br>");
+		var car1=null;
+		document.write(car1+"<br>");
+	</script>
+
+</body>
+</html>
