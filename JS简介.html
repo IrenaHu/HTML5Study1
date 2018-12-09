@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>
+Java Script能够直接写入HTML输出流中
+</p>
+
+<script>
+document.write("<h1>This is a Heading</h1>");
+document.write("<p>This is a Paragraph.</p>")
+</script>
+
+<button type="button" onclick="alert('Welcome!')">Click Here</button>
+
+<p id="demo">
+	JavaScript可以改变html元素的内容。
+</p>
+
+<script>
+function myFunction()
+{
+x=document.getElementById("demo");  // 找到元素,*注意大小写
+x.innerHTML="Hello JavaScript!";    // 改变内容
+
+//上述两句还能写成:document.getElementById("demo").innerHTML="Hello JavaScript!"
+}
+</script>
+
+<button type="button" onclick="myFunction()">变字</button>
+
+<p id="colordemo">
+	JS可以改变HTML字体颜色
+</p>
+
+<script>
+function myFunction1()
+{
+x=document.getElementById("colordemo") // 找到元素,*注意这里是"="不是"."
+x.style.color="#ff0000";          // 改变样式
+}
+</script>
+
+<button type="button" onclick="myFunction1()">变色</button>
+
+<p>
+请输入数字，如果输入值不是数字，跳alert
+</p>
+
+<input id="inputdemo" type="text">
+
+<script>
+	function myFunction2()
+	{
+		var x=document.getElementById("inputdemo").value;
+		if(x==""||isNaN(x))
+		{
+			alert("please input numbers");
+		}
+	}
+</script>
+
+<button type="button" onclick="myFunction2()">请输入数字</button>
+</body>
+</html>

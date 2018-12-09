@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript语句</title>
+</head>
+<body>
+	<h1>My Web Page</h1>
+	<p id="demo">A Paragraph.</p>
+	<div id="myDIV">A DIV.</div>
+	<p>
+		<button type="button" onclick="myFunction()">Click</button>
+	</p>
+	<p>
+		点击变字
+	</p>
+
+	<script>
+		function myFunction()
+		{ 
+		document.getElementById("demo").innerHTML="Hello World."
+		document.getElementById("myDIV").innerHTML="How R U?" //JS对大小写敏感。JS会忽略多余的空格。
+		} 
+	</script>  
+</body>
+</html>
